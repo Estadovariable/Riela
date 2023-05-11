@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-const connection = require('../server/db');
+const db = require('server/db');
 
 const Login = ({ history }) => {
   const [user, setUser] = useState({ username: '', password: '' });
